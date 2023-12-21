@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Ответы на вопросы</h1>
+
+	<ol>
+
+		<li>
+			<div class="block">
+				<strong>Что записывается в свойство [[Scope]] функции?</strong>
+				<ul>
+					<li>A : Текущий LexicalEnvironment</li>
+					<li>B : Текущий LexicalEnvironment или window</li>
+					<li>C : у функции нет такого свойства</li>
+					<li>D : LexicalEnvironment, в котором эта функция была вызвана</li>
+				</ul>
+				<p class="ans">Ответ: A : Текущий LexicalEnvironment</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Как расшифровывается HTTP? </strong>
+				<ul>
+					<li>A : Протокол передачи гипертекста</li>
+					<li>B : Протокол частичной передачи текста</li>
+					<li>C : Личная передача гипертекста</li>
+					<li>D : Практичная передача части текста</li>
+				</ul>
+				<p class="ans">Ответ: A : Протокол передачи гипертекста</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<code class="code">
+					setTimeout(function timeout() {
+						console.log('1');
+					}, 0);
+					
+					Promise.resolve('2').then(console.log);
+					
+					console.log('3');
+				</code> <br>
+				<strong> Что будет выведено в консоль?  </strong>
+				<ul>
+					<li>A : 1,2,3</li>
+					<li>B : 3,1,2</li>
+					<li>C : 3,2,1</li>
+					<li>D : 2,3,1</li>
+				</ul>
+				<p class="ans">Ответ: C : 3,2,1</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<code class="code">
+					const obj1 = {
+						x:10
+					}
+					//const obj2 = Object.create(obj1.x);
+					//const obj2 = obj1.create('x');
+					//const obj2 = obj1.create({x:10});
+					const obj2 = Object.create(obj1);
+					
+					console.log(obj2.x);
+				</code> <br>
+				<strong> Какой из четырех способов приведек к ожидаемому результату?  </strong>
+				<ul>
+					<li>A : 1</li>
+					<li>B : 2</li>
+					<li>C : 3</li>
+					<li>D : 4</li>
+				</ul>
+				<p class="ans">Ответ: D:4</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<code class="code">
+					const map = new Map();
+					map.set('0', '1');
+					map.set('s2', '2s');
+					map.set('3s', 's3');
+					const arr = [...map.values()];
+					const result = arr.map(value => parseInt(value, 10));
+					console.log(result);
+				</code> <br>
+				<strong> Что произойдет при исполнении этого кода?  </strong>
+				<ul>
+					<li>A : Ошибка при использовании spread оператора</li>
+					<li>B : [1, 2, NaN]</li>
+					<li>C : Ошибка при парсинге третьего элемента</li>
+					<li>D : [1, 2, 3]</li>
+				</ul>
+				<p class="ans">Ответ: B : [1, 2, NaN]</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> DOM - это ... </strong>
+				<ul>
+					<li>A : объектная модель документа, которая представляет все содержимое страницы в виде объектов, которые можно менять</li>
+					<li>B : дополнительные объекты, предоставляемые браузером (окружением), чтобы работать со всем, кроме документа</li>
+					<li>C : объект, представляющий стили</li>
+					<li>D : разметка страниц в браузере</li>
+				</ul>
+				<p class="ans">Ответ: A : объектная модель документа, которая представляет все содержимое страницы в виде объектов, которые можно менять</p>
+			</div>
+		</li>
+		
+		<li>
+			<div class="block">
+				<code class="code">
+					var a = 'hello';
+					function b() {
+						console.log(a);
+						var a = 'world'
+						console.log(a);
+					}
+					b();
+				</code> <br>
+				<strong> Что будет выведено в консоль?</strong>
+				<ul>
+					<li>A : hello, world</li>
+					<li>B : В коде ошибка</li>
+					<li>C : hello, hello</li>
+					<li>D : undefined, world</li>
+				</ul>
+				<p class="ans">Ответ: D : undefined, world</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> За что отвечает свойство overflow?</strong>
+				<ul>
+					<li>A : управляет тем, как ведёт себя содержимое блочного элемента, если его размер превышает допустимую длину/ширину.</li>
+					<li>B : применяется для изменения алгоритма расчета ширины и высоты элемента.</li>
+					<li>C : определяет горизонтальное/вертикальное выравнивание текста в пределах элемента</li>
+					<li>D : устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице</li>
+				</ul>
+				<p class="ans">Ответ: A : управляет тем, как ведёт себя содержимое блочного элемента, если его размер превышает допустимую длину/ширину.</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Какие типы данных существуют в js (Стандарт языка ES6) </strong>
+				<ul>
+					<li>A : boolean, string, number, undefined, null, symbol</li>
+					<li>B : byte, short, int, long, float, double, char, boolean</li>
+					<li>C : boolean, string, number, undefined, null, object</li>
+					<li>D : boolean, string, number, undefined, null, symbol, object</li>
+				</ul>
+				<p class="ans">Ответ: D : boolean, string, number, undefined, null, symbol, object</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> С помощью чего можно обработать любое динамически изменяемое количество аргументов функции? </strong>
+				<ul>
+					<li>A : свойства arguments внутри вызванной функции</li>
+					<li>B : свойства args внутри вызванной функции</li>
+					<li>C : невозможно обрабатывать динамическое количество аргументов в функции</li>
+					<li>D : метода this.getArguments()</li>
+				</ul>
+				<p class="ans">Ответ: A : свойства arguments внутри вызванной функции</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> С помощью чего можно обработать любое динамически изменяемое количество аргументов функции? </strong>
+				<ul>
+					<li>A : свойства arguments внутри вызванной функции</li>
+					<li>B : свойства args внутри вызванной функции</li>
+					<li>C : невозможно обрабатывать динамическое количество аргументов в функции</li>
+					<li>D : метода this.getArguments()</li>
+				</ul>
+				<p class="ans">Ответ: A : свойства arguments внутри вызванной функции</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<code class="code">
+					console.log(0 || 1 && 2 || 3);
+				</code> <br>
+				<strong> Что будет выведено в консоль?</strong>
+				<ul>
+					<li>A : 0</li>
+					<li>B : 1</li>
+					<li>C : 2</li>
+					<li>D : 3</li>
+				</ul>
+				<p class="ans">Ответ: C : 2</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<code class="code">
+					const str = 'h2h40h';
+					const result2 = str
+								.split('h')
+								.map(s => s + 10)
+								.filter(s => s.length < 4);
+					console.log(result2);
+				</code> <br>
+				<strong> Что будет в консоле после исполнения кода? </strong>
+				<ul>
+					<li>A : ["250"]</li>
+					<li>B : ["10", "210", "10"]</li>
+					<li>C : ["210"]</li>
+					<li>D : ["210", "10", "210"]</li>
+				</ul>
+				<p class="ans">Ответ: B : ["10", "210", "10"]</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Каким способом можно найти на странице элемент имеющий идентификатор 'test' </strong>
+				<ul>
+					<li>A : document.getElementById('test')</li>
+					<li>B : document.findById('test')</li>
+					<li>C : document.querySelector('test')</li>
+					<li>D : document.queryById('#id')</li>
+				</ul>
+				<p class="ans">Ответ: A : document.getElementById('test')</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<code class="code">
+					let a = 10;
+					a.b = 10;
+					console.log(a);
+				</code> <br>
+				<strong> Что произойдет во время исполнения этого кода? </strong>
+				<ul>
+					<li>A : Ошибка объявления свойства "b" у примитива "a"</li>
+					<li>B : В консоле увидим объект {b: 10}</li>
+					<li>C : В консоле увидим 10.</li>
+					<li>D : В консоле увидим undefined.</li>
+				</ul>
+				<p class="ans">Ответ: C : В консоле увидим 10.</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<code class="code">
+					const meetups = [
+					{name: 'JavaScript', isActive:true, members:100},
+					{name: 'Angular', isActive:true, members:900},
+					{name: 'Node', isActive:false, members:600},
+					{name: 'React', isActive:true, members:500}
+				];
+				const membersOnActiveMeetups = metups => meetups
+					.filter(meetup => meetup.isActive)
+					.reduce((sum, meetup) => sum + meetup.members, 0);
+
+				console.log(membersOnActiveMeetups(meetups));
+				</code> <br>
+				<strong> Какую из четырех строк необходимо дописать, чтобы получить желаемый результат?</strong>
+				<ul>
+					<li>A : 1</li>
+					<li>B : 2</li>
+					<li>C : 3</li>
+					<li>D : 4</li>
+				</ul>
+				<p class="ans">Ответ: D : 4</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<div class="flex">
+					<div>element_1</div>
+					<div>element_2</div>
+					<div>elemeny_3</div>
+				</div>
+				<br>
+				<strong> Каким образом будут расположены элементы на странице, если ширина элемента с классом flex более 1000 пикселей? </strong>
+				<ul>
+					<li>A : Будут расположены в столбец с равным растоянием между элементами</li>
+					<li>B : Будут расположены в строку с равным рассоянием между элементами</li>
+					<li>C : Будут расположены в столбец с равным расстоянием между элементами и границами блока</li>
+					<li>D : Будут расположены в строку с равным расстоянием между элементами и границами блока</li>
+				</ul>
+				<p class="ans">Ответ: B : Будут расположены в строку с равным рассоянием между элементами</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<code class="code">
+					async function bar() {
+						return Promise.resolve(10);
+					}
+					async function foo() {}
+					const res1 = foo();
+					const res2 = bar();
+					console.log(res1, res2);
+				</code> <br>
+				<strong> Что будет выведено в консоль?</strong>
+				<ul>
+					<li>A : promise, undefined</li>
+					<li>B : 10, undefined</li>
+					<li>C : promise, promise</li>
+					<li>D : Ошибка вызовов async функций без await</li>
+				</ul>
+				<p class="ans">Ответ: A : promise, undefined</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<div style="margin-bottom: 5px; border: 2px solid black">Блок1</div>
+				<div style="margin-top: 10px; border: 2px solid black">Блок2</div>
+				<br>
+				<strong> Какой отступ будет между блоками?</strong>
+				<ul>
+					<li>A : Отступ 15px</li>
+					<li>B : Отступ 5px</li>
+					<li>C : Отступ 10px</li>
+					<li>D : Зависит от браузера</li>
+				</ul>
+				<p class="ans">Ответ: C : Отступ 10px</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Что такое рекурсия? </strong>
+				<ul>
+					<li>A : Вызов функцией самой себя</li>
+					<li>B : Прохождение по циклу с вызовом разных функций</li>
+					<li>C : Прохождение по циклу с вызовом одной и той же функции</li>
+					<li>D : передача одной функции в другую функцию</li>
+				</ul>
+				<p class="ans">A : Вызов функцией самой себя</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Какие очереди задач есть в event loop?</strong>
+				<ul>
+					<li>A : microtasks, tasks, render</li>
+					<li>B : microtasks, tasks</li>
+					<li>C : tasks, render</li>
+					<li>D : timeouts, intervals, tasks</li>
+				</ul>
+				<p class="ans">A : microtasks, tasks, render</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Какими из перечесленных способов добавить обработчик события на элемент: <code><br>
+					1.element.click(обработчик) <br>
+					2.element.onclick(обработчик) <br>
+					3.element.addEventListener('click', обработчик)<br>
+					4.element.subscribeToEvent('click', обработчик)
+				</code>
+				</strong>
+				<ul>
+					<li>A : 1, 3</li>
+					<li>B : 2, 4</li>
+					<li>C : 1, 4</li>
+					<li>D : 2, 3</li>
+				</ul>
+				<p class="ans">B : 2, 4</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Что такое HTMLCollection?
+				</strong>
+				<ul>
+					<li>A : Массив DOM элементов</li>
+					<li>B : Массив DOM элементов, предоставляющий дополнительные методы для работы коллекцией</li>
+					<li>C : Объект с числовыми ключами содержащий DOM элементы и предоставляющий методы для работы с ними как с массивом</li>
+					<li>D : Объект с числовыми ключами содержащий DOM элементы и предлставляющий дополнительные методы для работы с коллекцией</li>
+				</ul>
+				<p class="ans">C : Объект с числовыми ключами содержащий DOM элементы и предоставляющий методы для работы с ними как с массивом</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Специфичность (вес) какого css-селектора является наибольшим? 
+				</strong>
+				<ul>
+					<li>A : class</li>
+					<li>B : id</li>
+					<li>C : tag</li>
+					<li>D : pseudo-element</li>
+				</ul>
+				<p class="ans">B : id</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> В каком случае / случаях может произойти фриз страницы? 
+				</strong>
+				<ul>
+					<li>A : Выполняется бесконечный цикл в синхронном коде</li>
+					<li>B : callback внутри setTimeout бесконечно вызывает setTimeout</li>
+					<li>C : Внутри промиса бесконечно создаются другие промисы</li>
+					<li>D : В случаях 1 и 3</li>
+				</ul>
+				<p class="ans">D : В случаях 1 и 3</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<div id="parent">
+					<div id="child">
+					</div>
+				</div>
+				<strong> Какое будет положение у блока с id="child" внутри блока id="parent"? 
+				</strong>
+				<ul>
+					<li>A : блок child будет в центре</li>
+					<li>B : блок child будет вертикально по центру, а горизонтально слева</li>
+					<li>C : блок child будет горизонтально по центру, а вертикально в верху</li>
+					<li>D : блок child будет в левом верхнем углу</li>
+				</ul>
+				<p class="ans">C : блок child будет горизонтально по центру, а вертикально в верху</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Как активировать срабатывание обработчиков при всплытии события?
+				</strong>
+				<ul>
+					<li>A : При подписке на событие нужно третьим аргументов передать флаг true</li>
+					<li>B : Нужно делать подписку на специальный тип событий, например: 'bubling:click'</li>
+					<li>C : Никак, это поведение по умолчанию</li>
+					<li>D : При подписке на событие нужно третьим аргументом передать флаг false</li>
+				</ul>
+				<p class="ans">C : Никак, это поведение по умолчанию</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Как работает метод bind?
+				</strong>
+				<ul>
+					<li>A : Привязывает контекст и вызывает функцию</li>
+					<li>B : Привязывает контекст и возвращает новую функцию</li>
+					<li>C : Вызывает функцию, передавая массив аргументов</li>
+					<li>D : Этого метода не существует</li>
+				</ul>
+				<p class="ans">B : Привязывает контекст и возвращает новую функцию</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<code class="code">
+					let obj = {
+						"0": 1,
+						0: 2
+					}
+					console.log(obj["0"] + obj[0]);
+				</code> <br>
+				<strong> Что будет выведено в консоль?
+				</strong>
+				<ul>
+					<li>A : 2</li>
+					<li>B : 3</li>
+					<li>C : 4</li>
+					<li>D : В коде ошибка</li>
+				</ul>
+				<p class="ans">C : 4</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="block">
+				<strong> Что такое замыкание?
+				</strong>
+				<ul>
+					<li>A : это трансформация функций таким образом, чтобы они принимали аргументы не как f(a, b, c), а как f(a)(b)(c)</li>
+					<li>B : приём, который позволяет выполнять несколько методов последовательно, а не вызывать их по отдельности</li>
+					<li>C : это функция вместе со всеми внешними переменными, которые ей доступны</li>
+					<li>D : Паттерн программрования</li>
+				</ul>
+				<p class="ans">C : это функция вместе со всеми внешними переменными, которые ей доступны</p>
+			</div>
+		</li>
+
+	</ol>
+
+
+
+
+	
+
+	<script src="./test.js"></script>
+</body>
+</html>
